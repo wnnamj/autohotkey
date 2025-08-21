@@ -10,7 +10,7 @@
 +^f12::changeAppearance("{TAB 7}","{TAB 2}")
 
 
-;==================== function ====================
+;====================> function <====================;
 
 changeAppearance(toTheme,outTheme)
 {

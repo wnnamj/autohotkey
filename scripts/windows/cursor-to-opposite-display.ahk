@@ -1,7 +1,7 @@
 ﻿#Requires AutoHotkey 2.0+
 #SingleInstance Force
 
-#include E:\projects\github\autohotkey\lib\ahk-tools\tap-hold-manager\Lib\TapHoldManager.ahk
+#Include E:\projects\github\autohotkey\lib\ahk-tools\tap-hold-manager\Lib\TapHoldManager.ahk
 ;https://github.com/evilC/TapHoldManager
 
 CoordMode("Mouse")
