@@ -18,8 +18,8 @@
 
 expression(expressionPath)
 {
-	expression := FileRead("E:\projects\github\after-effects\expressions\" expressionPath ".txt")
-	Send expression
+	sendExpression := FileRead("E:\projects\github\after-effects\expressions\" expressionPath ".txt")
+	Send sendExpression
 	Return
 }
 
