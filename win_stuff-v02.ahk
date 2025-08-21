@@ -42,7 +42,7 @@ Return
 
 ;====================> scripty things <====================;
 
-#HotIf WinActive("ahk_exe SciTE.exe")
+#HotIf WinActive("ahk_exe Code.exe")
 
 ^+r::Reload
 +^w::Run "C:\Program Files\AutoHotkey\WindowSpy.ahk"
