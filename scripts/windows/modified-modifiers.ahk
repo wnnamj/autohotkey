@@ -11,11 +11,18 @@ LWin::LCtrl
 RWin::RCtrl
 RCtrl::RWin
 LCtrl::LWin
-;CapsLock::
 SetCapsLockState("AlwaysOff")
 SetNumLockState("AlwaysOn")
 
 #HotIf
+
+
+;====================> media and nav <====================;
+
+f13:: XButton2 ; forward
+f16:: XButton1 ; back
+f24:: Media_Play_Pause ; play/pause
+
 
 ;====================> text navigation <====================;
 
@@ -71,3 +78,18 @@ SetNumLockState("AlwaysOn")
 
 ; everything roc Delete
 +^Backspace::Send ("+^{Del}")
+
+
+;====================> other keys <====================;
+
+#HotIf WinActive("ahk_exe AfterFX.exe")
+
+CapsLock:: {
+		SetCapsLockState("on")
+}
+
+^CapsLock:: {
+		SetCapsLockState("off")
+}
+
+#HotIf
