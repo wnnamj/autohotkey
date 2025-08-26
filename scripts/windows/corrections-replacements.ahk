@@ -1,4 +1,6 @@
-﻿#SingleInstance Force
+﻿#Requires AutoHotkey 2.0+
+#SingleInstance Force
+
 
 ;====================> thing stuffs <====================;
 

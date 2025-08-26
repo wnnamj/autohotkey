@@ -1,5 +1,6 @@
-﻿#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey 2.0+
 #SingleInstance Force
+
 
 :*xc:-atf::expression("auto-fade") ; auto fade
 :*xc:-chk::expression("checkbox-sel") ; checkbox selector

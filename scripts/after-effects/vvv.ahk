@@ -1,4 +1,6 @@
-﻿#SingleInstance
+﻿#Requires AutoHotkey 2.0+
+#SingleInstance Force
+
 
 ^y::newVVV("^+!{Y}","","▣ void-") ; new void
 +^y::newVVV("^+!{W}","","▣ void-") ; new invisible void

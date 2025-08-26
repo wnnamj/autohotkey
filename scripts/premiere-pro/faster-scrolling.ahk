@@ -1,5 +1,6 @@
-﻿#SingleInstance
-#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey 2.0+
+#SingleInstance Force
+
 
 !WheelUp::Send ("!{wheelUp 5}")
 !WheelDown::Send ("!{wheelDown 5}")

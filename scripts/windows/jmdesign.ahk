@@ -1,5 +1,6 @@
-﻿#Requires Autohotkey v2
-#SingleInstance force
+﻿#Requires AutoHotkey 2.0+
+#SingleInstance Force
+
 
 ; post render file rename
 :*x:-h1::postRender("h265","1080")

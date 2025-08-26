@@ -1,4 +1,6 @@
-﻿#SingleInstance
+﻿#Requires AutoHotkey 2.0+
+#SingleInstance Force
+
 
 ^f12::changeAppearance("{TAB 5}","{TAB 4}") ; darkest
 !f12::changeAppearance("{TAB 6}","{TAB 3}") ; dark

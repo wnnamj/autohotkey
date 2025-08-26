@@ -1,6 +1,7 @@
 #Requires AutoHotkey 2.0+
 #SingleInstance Force
 
+
 +f2::replaceComp("{k}") ; replace comp
 f2::setWorkarea("{k}") ; set work area
 
