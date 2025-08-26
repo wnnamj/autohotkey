@@ -22,6 +22,7 @@
 #Include E:\projects\github\autohotkey\scripts\after-effects\comp-replacement.ahk
 #Include E:\projects\github\autohotkey\scripts\after-effects\expressions.ahk
 #Include E:\projects\github\autohotkey\scripts\after-effects\faster-scrolling-ae.ahk
+#Include E:\projects\github\autohotkey\scripts\after-effects\aemouse.ahk
 Return
 
 #HotIf
@@ -48,5 +49,3 @@ Return
 +^w::Run "C:\Program Files\AutoHotkey\WindowSpy.ahk"
 
 #HotIf
-
-
