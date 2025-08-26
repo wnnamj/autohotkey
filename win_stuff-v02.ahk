@@ -45,7 +45,7 @@ Return
 
 #HotIf WinActive("ahk_exe Code.exe")
 
-^+r::Reload
+; ^+r::Reload
 +^w::Run "C:\Program Files\AutoHotkey\WindowSpy.ahk"
 
 #HotIf

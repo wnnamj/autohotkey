@@ -27,7 +27,8 @@ expression(expressionPath)
 ;==================== other ====================
 
 ; insert a comment
-^/::{
+^/::
+{
 	Send "// "
 	Return
 }

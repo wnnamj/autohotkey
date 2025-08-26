@@ -1,20 +1,16 @@
 ﻿#SingleInstance
 
-; new void
-f5::
-^y::newVVV("^+!{Y}","","▣ void-")
+^y::newVVV("^+!{Y}","","▣ void-") ; new void
++^y::newVVV("^+!{W}","","▣ void-") ; new invisible void
+!y::newVVV("^+!{I}","","◉ variant-") ; new variant
+#y::newVVV("^+!{U}","{Enter}","◈ volume-") ; new volume
 
-; new invisible void
-+f5::
-+^y::newVVV("^+!{W}","","▣ void-")
 
-; new variant
-f6::
-!y::newVVV("^+!{I}","","◉ variant-")
+;====================> text <====================;
 
-; new volume
-f7::
-#y::newVVV("^+!{U}","{Enter}","◈ volume-")
+:*xo:-v1::Send "▣ void-" ; void
+:*xo:-v2::Send "◉ variant-" ; variant
+:*xo:-v3::Send "◈ volume-" ; volume
 
 
 ;====================> function <====================;

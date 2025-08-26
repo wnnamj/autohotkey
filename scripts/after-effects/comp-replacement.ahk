@@ -1,17 +1,15 @@
 #Requires AutoHotkey 2.0+
 #SingleInstance Force
 
-; replace
-+f2::replaceComp("{k}")
++f2::replaceComp("{k}") ; replace comp
+f2::setWorkarea("{k}") ; set work area
 
-; set work area
-f2::setWorkarea("{k}")
-
-; replace and set
-#f2::{
+; replace comp and set work area
+#f2::
+{
 	replaceComp("k")
 	Sleep 100
-	setWorkarea("{j}")
+	setWorkArea("{j}")
 }
 
 
@@ -28,7 +26,7 @@ replaceComp(projPanel)
 	SendInput (projPanel)
 }
 
-setWorkarea(nextComp)
+setWorkArea(nextComp)
 {
 	SendInput ("{i}")
 	SendInput ("{NumpadEnter}")

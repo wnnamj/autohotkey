@@ -63,14 +63,16 @@ f22:: Media_Play_Pause ; play/pause
 +!Backspace::Send ("^{Del}")
 
 ; loc word Delete
-!Backspace::{
+!Backspace::
+{
 	Send ("+^{Left}")
 	Send ("{Del}")
 	Return
 }
 
 ; everything loc Delete
-^Backspace::{
+^Backspace::
+{
 	Send ("+{Home}")
 	Send ("{Del}")
 	Return
@@ -82,14 +84,16 @@ f22:: Media_Play_Pause ; play/pause
 
 ;====================> other keys <====================;
 
-#HotIf WinActive("ahk_exe AfterFX.exe")
+/* #HotIf WinActive("ahk_exe AfterFX.exe")
 
-CapsLock:: {
+CapsLock::
+{
 		SetCapsLockState("on")
 }
 
-^CapsLock:: {
+^CapsLock::
+{
 		SetCapsLockState("off")
 }
 
-#HotIf
+#HotIf */

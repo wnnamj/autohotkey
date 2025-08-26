@@ -1,7 +1,7 @@
 ﻿#SingleInstance
 #Requires AutoHotkey v2.0
 
-!wheelUp::send ("!{wheelUp 5}")
-!wheelDown::send ("!{wheelDown 5}")
-+wheelUp::send ("+{wheelUp 5}")
-+wheelDown::send ("+{wheelDown 5}")
+!WheelUp::Send ("!{wheelUp 5}")
+!WheelDown::Send ("!{wheelDown 5}")
++WheelUp::Send ("+{wheelUp 5}")
++WheelDown::Send ("+{wheelDown 5}")
