@@ -14,10 +14,10 @@ f6::
 
 ; new volume
 f7::
-#y::newVVV("^+{U}","{Enter}","◈ volume-")
+#y::newVVV("^+!{U}","{Enter}","◈ volume-")
 
 
-;==================== function ====================
+;====================> function <====================;
 
 SleepDur := 100
 

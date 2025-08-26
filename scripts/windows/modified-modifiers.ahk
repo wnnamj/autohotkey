@@ -21,7 +21,7 @@ SetNumLockState("AlwaysOn")
 
 f13:: XButton2 ; forward
 f16:: XButton1 ; back
-f24:: Media_Play_Pause ; play/pause
+f22:: Media_Play_Pause ; play/pause
 
 
 ;====================> text navigation <====================;

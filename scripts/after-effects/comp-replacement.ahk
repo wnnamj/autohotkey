@@ -2,16 +2,16 @@
 #SingleInstance Force
 
 ; replace
-^f2::replaceComp("^+{P}")
++f2::replaceComp("{k}")
 
 ; set work area
-+f2::setWorkarea("^{Up}")
+f2::setWorkarea("{k}")
 
 ; replace and set
 #f2::{
-	replaceComp("")
+	replaceComp("k")
 	Sleep 100
-	setWorkarea("^{Down}")
+	setWorkarea("{j}")
 }
 
 
@@ -19,24 +19,24 @@
 
 replaceComp(projPanel)
 {
-	SendInput ("^+{P}")
-	SendInput ("{Down}")
+	SendInput ("^+{p}")
+	SendInput ("{j}")
 	SendInput ("{\}")
 	Sleep 100
-	SendInput ("^{Up}")
+	SendInput ("{k}")
 	SendInput ("^!{/}")
 	SendInput (projPanel)
 }
 
 setWorkarea(nextComp)
 {
-	SendInput ("{I}")
-	SendInput ("^{Enter}")
-	SendInput ("{B}")
-	SendInput ("^{W}")
-	SendInput ("{O}")
-	SendInput ("^{Enter}")
-	SendInput ("{N}")
-	SendInput ("^{W}")
+	SendInput ("{i}")
+	SendInput ("{NumpadEnter}")
+	SendInput ("{b}")
+	SendInput ("^{w}")
+	SendInput ("{o}")
+	SendInput ("{NumpadEnter}")
+	SendInput ("{n}")
+	SendInput ("^{w}")
 	SendInput (nextComp)
 }
