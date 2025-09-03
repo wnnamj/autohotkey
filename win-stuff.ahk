@@ -30,15 +30,15 @@ Return
 
 ;====================> premiere pro <====================;
 
-;~ #HotIf WinActive("ahk_exe Adobe Premiere Pro.exe")
-;~ #Include E:\projects\github\autohotkey\scripts\premiere-pro\faster-scrolling.ahk
-;~ #HotIf
+/* #HotIf WinActive("ahk_exe Adobe Premiere Pro.exe")
+#Include E:\projects\github\autohotkey\scripts\premiere-pro\faster-scrolling.ahk
+#HotIf */
 
 
 ;====================> illustrator <====================;
 
-;~ #HotIf WinActive("ahk_exe Illustrator.exe")
-;~ #HotIf
+/* #HotIf WinActive("ahk_exe Illustrator.exe")
+#HotIf */
 
 
 ;====================> scripty things <====================;
