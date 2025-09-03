@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey 2.0+
+#Requires AutoHotkey 2.0+
 #SingleInstance Force
 
 
@@ -17,8 +17,7 @@
 
 ;==================== function ====================
 
-expression(expressionPath)
-{
+expression(expressionPath) {
 	sendExpression := FileRead("E:\projects\github\after-effects\expressions\" expressionPath ".txt")
 	Send sendExpression
 	Return
@@ -28,8 +27,7 @@ expression(expressionPath)
 ;==================== other ====================
 
 ; insert a comment
-^/::
-{
+^/:: {
 	Send "// "
 	Return
 }

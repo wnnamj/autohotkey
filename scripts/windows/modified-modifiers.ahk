@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey 2.0+
+#Requires AutoHotkey 2.0+
 #SingleInstance Force
 Persistent
 
@@ -63,16 +63,14 @@ f22:: Media_Play_Pause ; play/pause
 +!Backspace::Send ("^{Del}")
 
 ; loc word Delete
-!Backspace::
-{
+!Backspace:: {
 	Send ("+^{Left}")
 	Send ("{Del}")
 	Return
 }
 
 ; everything loc Delete
-^Backspace::
-{
+^Backspace:: {
 	Send ("+{Home}")
 	Send ("{Del}")
 	Return
@@ -86,14 +84,12 @@ f22:: Media_Play_Pause ; play/pause
 
 /* #HotIf WinActive("ahk_exe AfterFX.exe")
 
-CapsLock::
-{
-		SetCapsLockState("on")
+CapsLock:: {
+	SetCapsLockState("on")
 }
 
-^CapsLock::
-{
-		SetCapsLockState("off")
+^CapsLock:: {
+	SetCapsLockState("off")
 }
 
 #HotIf */

@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey 2.0+
+#Requires AutoHotkey 2.0+
 #SingleInstance Force
 
 
@@ -40,16 +40,14 @@
 ;====================> functions <====================;
 
 ; text inputs
-thingStuff(thingThing)
-{
+thingStuff(thingThing) {
 	thingPath := FileRead("C:\Program Files\ab049a6b-f552-43f9-9c9e-4ffc44c3d9a6\" thingThing)
 	Send thingPath
 	Return
 }
 
 ; date and time
-dateTime(dateTime)
-{
+dateTime(dateTime) {
 	TimeStampDateTime := FormatTime(,dateTime)
 	Send TimeStampDateTime
 	Return

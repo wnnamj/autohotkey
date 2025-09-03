@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey 2.0+
+#Requires AutoHotkey 2.0+
 #SingleInstance Force
 
 
@@ -9,14 +9,12 @@
 :*xc:-p2::postRender("prores422","2160")
 
 ; project link divider
-:*oc:-P::
-{
+:*oc:-P:: {
 	Send "- " ("^{z}") "- - -" "`n" A_Clipboard
 }
 
 ; invoice file name
-:*x:-inv::
-{
+:*x:-inv:: {
 	TimeStampDate := FormatTime(,"yyMMdd")
 	Send "jmd-inv_0000" "-" TimeStampDate "-" "cli"
 }
@@ -25,8 +23,7 @@
 ;====================> function <====================;
 
 ; post render rename
-postRender(codec,resolution)
-{
+postRender(codec,resolution) {
 	TimeStampDate := FormatTime(,"yyMMdd")
 	TimeStampTime := FormatTime(,"hhmm")
 	Send "-" codec "-" TimeStampDate "_" TimeStampTime "-" resolution "p"

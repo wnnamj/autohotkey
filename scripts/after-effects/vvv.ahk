@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey 2.0+
+#Requires AutoHotkey 2.0+
 #SingleInstance Force
 
 
@@ -19,8 +19,7 @@
 
 SleepDur := 100
 
-newVVV(shortcut,colPick,nullType)
-{
+newVVV(shortcut,colPick,nullType) {
 	Send (shortcut)
 	Sleep SleepDur
 	Send (colPick)

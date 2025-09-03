@@ -6,8 +6,7 @@
 f2::setWorkarea("{k}") ; set work area
 
 ; replace comp and set work area
-#f2::
-{
+#f2:: {
 	replaceComp("k")
 	Sleep 100
 	setWorkArea("{j}")
@@ -16,8 +15,7 @@ f2::setWorkarea("{k}") ; set work area
 
 ;====================> functions <====================;
 
-replaceComp(projPanel)
-{
+replaceComp(projPanel) {
 	SendInput ("^+{p}")
 	SendInput ("{j}")
 	SendInput ("{\}")
@@ -27,8 +25,7 @@ replaceComp(projPanel)
 	SendInput (projPanel)
 }
 
-setWorkArea(nextComp)
-{
+setWorkArea(nextComp) {
 	SendInput ("{i}")
 	SendInput ("{NumpadEnter}")
 	SendInput ("{b}")

@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey 2.0+
+#Requires AutoHotkey 2.0+
 #SingleInstance Force
 
 
@@ -9,8 +9,7 @@
 
 ;====================> function <====================;
 
-changeAppearance(toTheme,outTheme)
-{
+changeAppearance(toTheme,outTheme) {
 	SendInput ("^!{SC027}")
 	SendInput ("+{TAB}")
 	SendInput ("A")
