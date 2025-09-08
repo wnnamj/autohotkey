@@ -21,7 +21,7 @@
 #Include E:\projects\github\autohotkey\scripts\after-effects\vvv.ahk
 #Include E:\projects\github\autohotkey\scripts\after-effects\comp-replacement.ahk
 #Include E:\projects\github\autohotkey\scripts\after-effects\expressions.ahk
-#Include E:\projects\github\autohotkey\scripts\after-effects\faster-scrolling-ae.ahk
+#Include E:\projects\github\autohotkey\scripts\after-effects\sort-layers-top-to-bot.ahk
 #Include E:\projects\github\autohotkey\scripts\after-effects\aemouse.ahk
 Return
 
