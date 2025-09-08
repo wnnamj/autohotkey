@@ -7,10 +7,10 @@ Persistent
 
 #HotIfTimeout 10
 
-LWin::LCtrl
-RWin::RCtrl
-RCtrl::RWin
-LCtrl::LWin
+; LWin::LCtrl
+; RWin::RCtrl
+; RCtrl::RWin
+; LCtrl::LWin
 SetCapsLockState("AlwaysOff")
 SetNumLockState("AlwaysOn")
 
