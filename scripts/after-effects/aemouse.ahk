@@ -3,7 +3,10 @@
 
 #HotIf WinActive("ahk_exe AfterFX.exe")
 
-f13::Send ("{backspace}") ; clear
+f18::Send ("{backspace}") ; clear
+f19::Send ("!{=}") ; fit comp 100%
+
+;====================> navigation <====================;
 
 ; navigate forward
 f24::Send ("{.}") ; 1 frame
@@ -22,10 +25,23 @@ f15::Send ("{,}") ; 1 frame
 +!f15::Send ("+!{,}") ; shift keyframes 10 frames
 
 ; align to cti
-f16::Send ("{[}") ; align in
-!f16::Send ("!{[}") ; trim in
-f19::Send ("{]}") ; align out
-!f19::Send ("!{]}") ; trim out
+f13::Send ("{[}") ; align in
+!f13::Send ("!{[}") ; trim in
+f16::Send ("{]}") ; align out
+!f16::Send ("!{]}") ; trim out
+
+
+;====================> scrolling <====================;
+
+!WheelUp::Send ("!{wheelUp 15}")
+!WheelDown::Send ("!{wheelDown 15}")
++WheelUp::Send ("+{wheelUp 15}")
++WheelDown::Send ("+{wheelDown 15}")
+
+
+/* ; scrub with mouse wheel
+#WheelUp::Send ("{.}")
+#WheelDown::Send ("{,}") */
 
 #HotIf
 
