@@ -6,8 +6,14 @@
 f2::setWorkarea("{k}") ; set work area
 
 ; replace comp and set work area
+<<<<<<< Updated upstream
 #f2:: {
 	replaceComp("k")
+=======
+#f2::
+{
+	replaceComp("{k}")
+>>>>>>> Stashed changes
 	Sleep 100
 	setWorkArea("{j}")
 }
