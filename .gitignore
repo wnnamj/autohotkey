@@ -1,2 +1,6 @@
 # ignore all logs
 .DS_Store
+lib/images
+lib/shortcuts
+lib/ahk-tools
+scripts/_testing
